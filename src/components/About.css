@@ -1,0 +1,67 @@
+.aboutCard h4 {
+    color: darkmagenta;
+    font-size: 60px;
+  }
+  .aboutCard h1 {
+    color: darksalmon;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  .aboutCard h1 span {
+    font-weight: bold;
+  }
+  .aboutCard p {
+    margin-top: 20px;
+    font-weight: 300;
+  }
+  .aboutCard .row1 {
+    padding-right: 30px;
+  }
+  .aboutCard .row.image,
+  .aboutCard .image {
+    position: relative;
+  }
+  .aboutCard .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89.5%;
+    height: 44vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .aboutCard .image::before {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .features .flex_space,
+    .aboutCard {
+      flex-direction: column;
+    }
+    .aboutCard .image::after,
+    .aboutCard .image::before,
+    .aboutCard .control-btn::before {
+      display: none;
+    }
+    .aboutCard .row {
+      width: 100%;
+    }
+    .aboutCard .image {
+      margin-top: 50px;
+    }
+    .aboutCard img {
+      width: 100%;
+    }
+  }

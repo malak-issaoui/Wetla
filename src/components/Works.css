@@ -1,0 +1,45 @@
+.works {
+    text-align: center;
+  }
+  .works img {
+    width: auto;
+    height: auto;
+  }
+  .works .box {
+    padding: 40px 20px;
+    background-color: beige;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  }
+  .works h2 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .works p {
+    font-size: 14px;
+  }
+  /* statistics */
+
+.statistics {
+  padding: 50px 0;
+  font-family: sans-serif;
+}
+
+.statistics i, .statistics p {
+  color: #bd8cbf;
+}
+
+.statistics i {
+  margin-bottom: 10px;
+}
+
+.statistics h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+  @media screen and (max-width: 768px) {
+    .works .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
